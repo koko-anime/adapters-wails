@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+KokoAnime Version: 1
+
+[Koko Lektor]
+Voice = pl_lektor_1
+Duck = -12
+
+[Koko Rules]
+SkipStyles = Sign, OP*
+SkipIfNoActor = yes
+MaxSpeed = 1.3
+
+[Koko Styles]
+Italics = mode=thought gain=-1
+
+[Koko Lexicon]
+Jinshi = dʑinɕi
+Gyokuyou* = ~Giokujo
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,70,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,3.5,0,2,60,60,60,1
+Style: Italics,Arial,70,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,3.5,0,2,60,60,60,1
+Style: Sign,Arial,60,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,2,0,8,60,60,40,1
+Style: OP,Arial,60,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,0,8,60,60,40,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,,Zwykły komentarz — nigdy nie jest czytany
+Dialogue: 0,0:00:01.00,0:00:04.00,OP,Text,0,0,0,,Tekst piosenki z openingu
+Dialogue: 0,0:00:05.00,0:00:07.50,Sign,Text,0,0,0,,{!kk read}Odcinek pierwszy: Zielarka
+Dialogue: 0,0:00:08.00,0:00:10.00,Default,Jinshi,0,0,0,,Idę do pałacu.
+Dialogue: 0,0:00:13.00,0:00:15.50,Default,Maomao,0,0,0,,Pani Gyokuyou, przyszedł {\i1}pan Jinshi{\i0}.
+Dialogue: 0,0:00:16.00,0:00:18.00,Italics,Maomao,0,0,0,,{!kk join}Czasami zapominam,
+Dialogue: 0,0:00:18.20,0:00:20.00,Italics,Maomao,0,0,0,,że to wewnętrzny pałac.
+Dialogue: 0,0:00:21.00,0:00:23.00,Default,Jinshi,0,0,0,,{!kk say="Zbierają grzyby i się trują."}Zbierają grzyby bez pozwolenia\Ni nabawiają się zatrucia pokarmowego.
+Dialogue: 0,0:00:24.00,0:00:26.50,Default,Maomao,0,0,0,,- Trujące?\N- Wszystkie co do jednego.
+Dialogue: 0,0:00:27.00,0:00:29.00,Default,Maomao,0,0,0,,To {!kk ipa=ɔɲi}Oni{!kk /}, nie ludzie.
+Dialogue: 0,0:00:30.00,0:00:32.00,Default,,0,0,0,,Tłumaczenie: przykład
