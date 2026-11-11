@@ -121,7 +121,7 @@ export function wailsPlugin(capabilities: WailsCapabilities, opts: WailsOptions 
   const m = (name: string, ...args: unknown[]) => call(`${service}.${name}`, ...args);
   const fsUrl = (path: string) => `${route}/fs?path=${encodeURIComponent(path.replace(/\\/g, '/'))}`;
 
-  const plugin: KokoPlugin = { name: opts.name ?? 'wails' };
+  const plugin: KokoPlugin = { name: opts.name ?? 'wails', api: '0.4' };
 
   if (capabilities.fs) {
     plugin.fs = {

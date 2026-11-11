@@ -114,4 +114,4 @@ bun run build
 
 `internal/testserver` uruchamia core bez Wails. Emuluje `Call.ByName` (POST `/call`) i używa atrap G2P/syntezy oraz prawdziwego FFmpeg. Gotową binarkę można podać w `KOKO_TESTSERVER`.
 
-Wymagania: Go 1.26 (wymóg Wails v3.0.0), FFmpeg z `libmp3lame` i `libopus`, `@koko-anime/formats` ≥ 0.3.0 z poprawką `OpusEncodeOptions.sampleRate`.
+Wymagania: Go 1.26 (wymóg Wails v3.0.0), FFmpeg z `libmp3lame` i `libopus`, `@koko-anime/formats` ~0.4.0 (API pluginów 0.4).

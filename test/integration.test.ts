@@ -68,7 +68,7 @@ describe('joinPath', () => {
 
 describe('wails() — capability', () => {
   test('wykrywa wszystkie capability serwisu', () => {
-    expect(Object.keys(plugin).filter((k) => k !== 'name').sort()).toEqual(['encoder', 'fs', 'g2p', 'synth']);
+    expect(Object.keys(plugin).filter((k) => k !== 'name' && k !== 'api').sort()).toEqual(['encoder', 'fs', 'g2p', 'synth']);
   });
 
   test('pomija capability niedostępne po stronie Go', async () => {

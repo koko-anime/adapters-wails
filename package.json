@@ -1,6 +1,6 @@
 {
   "name": "@koko-anime/adapters-wails",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Plugin Wails 3 dla @koko-anime/formats: pliki, G2P, synteza i kodowanie audio przez serwis Go",
   "license": "MIT",
   "type": "module",
@@ -27,11 +27,11 @@
     "prepublishOnly": "bun run typecheck && bun test && bun run build"
   },
   "peerDependencies": {
-    "@koko-anime/formats": "~0.3.0",
+    "@koko-anime/formats": "~0.4.0",
     "@wailsio/runtime": "^3.0.0"
   },
   "devDependencies": {
-    "@koko-anime/formats": "~0.3.0",
+    "@koko-anime/formats": "~0.4.0",
     "@types/bun": "latest",
     "@wailsio/runtime": "^3.1.0",
     "tsdown": "^0.23.7",
