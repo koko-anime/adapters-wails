@@ -5,14 +5,26 @@
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
-  "files": ["dist", "README.md"],
-  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
-  "repository": { "type": "git", "url": "git+https://github.com/seba9989/koko-adapters-wails.git" },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koko-anime/adapters-wails.git"
+  },
   "scripts": {
     "build": "tsdown",
     "typecheck": "tsc --noEmit -p .",
     "test": "bun test",
-    "test:go": "go test -race ./core"
+    "test:go": "go test -race ./core",
+    "prepublishOnly": "bun run typecheck && bun test && bun run build"
   },
   "peerDependencies": {
     "@koko-anime/formats": "~0.3.0",

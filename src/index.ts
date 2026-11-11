@@ -1,7 +1,7 @@
 /**
  * Plugin środowiska Wails 3 dla `@koko-anime/formats`.
  *
- * Współpracuje z serwisem Go `github.com/seba9989/koko-adapters-wails` (ten sam repozytorium):
+ * Współpracuje z serwisem Go `github.com/koko-anime/adapters-wails` (to samo repozytorium):
  * metody (pliki tekstowe, G2P, informacje o syntezie) idą przez most Wails (`Call.ByName`),
  * a dane binarne (audio, paczki, PCM) — przez trasę HTTP serwisu (domyślnie `/koko`),
  * bo most koduje `[]byte` w base64.
@@ -21,7 +21,7 @@
 import { definePlugin, type CanonicalSegment, type KokoPlugin, type ResolvedLexicon } from '@koko-anime/formats/plugin';
 
 /** Pełna nazwa typu serwisu Go (pakiet + typ) — prefiks nazw metod dla `Call.ByName`. */
-export const DEFAULT_SERVICE = 'github.com/seba9989/koko-adapters-wails.Service';
+export const DEFAULT_SERVICE = 'github.com/koko-anime/adapters-wails.Service';
 
 /** Domyślna trasa HTTP serwisu (`kokowails.DefaultRoute`). */
 export const DEFAULT_ROUTE = '/koko';

@@ -1,4 +1,4 @@
-module github.com/seba9989/koko-adapters-wails
+module github.com/koko-anime/adapters-wails
 
 go 1.26
 

@@ -4,7 +4,7 @@ Plugin **Wails 3** dla [`@koko-anime/formats`](https://www.npmjs.com/package/@ko
 
 | Część | Gdzie | Co robi |
 | --- | --- | --- |
-| Serwis Go `kokowails` | `github.com/seba9989/koko-adapters-wails` | pliki w piaskownicy, hooki G2P/syntezy, kodowanie audio (FFmpeg) |
+| Serwis Go `kokowails` | `github.com/koko-anime/adapters-wails` | pliki w piaskownicy, hooki G2P/syntezy, kodowanie audio (FFmpeg) |
 | Plugin TS `@koko-anime/adapters-wails` | npm | capability `fs`, `g2p`, `synth`, `encoder` dla biblioteki |
 
 Metody (tekst, G2P, info o syntezie) idą przez most Wails (`Call.ByName`). Dane binarne (audio, paczki, PCM) idą przez trasę HTTP serwisu (domyślnie `/koko`), bo most przesyła `[]byte` jako base64.
@@ -12,7 +12,7 @@ Metody (tekst, G2P, info o syntezie) idą przez most Wails (`Call.ByName`). Dane
 ## Go
 
 ```go
-import kokowails "github.com/seba9989/koko-adapters-wails"
+import kokowails "github.com/koko-anime/adapters-wails"
 
 koko, err := kokowails.New(kokowails.Config{
     Roots: []string{projectDir},   // tylko te katalogi są dostępne dla frontendu
@@ -97,7 +97,7 @@ await pack.rebuild();                                         // G2P + synteza +
 Opcje `wails(opts)` i `wailsPlugin(capabilities, opts)`:
 
 - `route` — trasa z `Register` (domyślnie `/koko`).
-- `service` — pełna nazwa typu Go, jeśli moduł ma inną ścieżkę (domyślnie `github.com/seba9989/koko-adapters-wails.Service`).
+- `service` — pełna nazwa typu Go, jeśli moduł ma inną ścieżkę (domyślnie `github.com/koko-anime/adapters-wails.Service`).
 - `call`, `fetch` — własne implementacje, np. do testów.
 - `name` — nazwa pluginu.
 

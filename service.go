@@ -18,7 +18,7 @@ package kokowails
 import (
 	"context"
 
-	"github.com/seba9989/koko-adapters-wails/core"
+	"github.com/koko-anime/adapters-wails/core"
 	"github.com/wailsapp/wails/v3/pkg/application"
 )
 
@@ -46,7 +46,7 @@ type (
 var NewFFmpeg = core.NewFFmpeg
 
 // Service to serwis Wails. Metody eksportowane (z osadzonego *core.Core) są wywoływane
-// z frontendu jako `github.com/seba9989/koko-adapters-wails.Service.<Metoda>`,
+// z frontendu jako `github.com/koko-anime/adapters-wails.Service.<Metoda>`,
 // a ServeHTTP obsługuje dane binarne pod trasą podaną w Register.
 type Service struct {
 	*core.Core

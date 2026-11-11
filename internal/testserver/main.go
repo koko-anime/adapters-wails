@@ -16,7 +16,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/seba9989/koko-adapters-wails/core"
+	"github.com/koko-anime/adapters-wails/core"
 )
 
 const sampleRate = 24000
