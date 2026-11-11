@@ -5,14 +5,14 @@
     "": {
       "name": "@koko-anime/adapters-wails",
       "devDependencies": {
-        "@koko-anime/formats": "~0.3.0",
+        "@koko-anime/formats": "~0.4.0",
         "@types/bun": "latest",
         "@wailsio/runtime": "^3.1.0",
         "tsdown": "^0.23.7",
         "typescript": "^5.9.0",
       },
       "peerDependencies": {
-        "@koko-anime/formats": "~0.3.0",
+        "@koko-anime/formats": "~0.4.0",
         "@wailsio/runtime": "^3.0.0",
       },
     },
@@ -28,7 +28,7 @@
 
     "@emnapi/wasi-threads": ["@emnapi/wasi-threads@2.2.0", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-JP7OYH38Q7+pyTAe14raZHLQIK7BDKbdwji+Xi3pcd/6QkJYQH3SX4wu6EplGrGJWRepoNzedfm0G3B9Z4e9Rw=="],
 
-    "@koko-anime/formats": ["@koko-anime/formats@0.3.0", "", { "dependencies": { "@noble/ed25519": "^3.2.0", "@noble/hashes": "^2.4.0", "arktype": "^2.2.9", "fflate": "^0.8.3", "smol-toml": "^1.9.1" } }, "sha512-o3qD7SOCMVJF9SurDDdoJJJt+FXm1QS5AC5uLzs3Euu8DzvVJ0UbG1NzQlpQ0kIrmwowtRjM1YgLrdba+jFkww=="],
+    "@koko-anime/formats": ["@koko-anime/formats@0.4.0", "", { "dependencies": { "@noble/ed25519": "^3.2.0", "@noble/hashes": "^2.4.0", "arktype": "^2.2.9", "fflate": "^0.8.3", "smol-toml": "^1.9.1" } }, "sha512-SgDiZE2xeZ89trXm6HHRM6JY2c+ukH30mySlDbhtaD2IhziQlgHd9NLDjsrS5X+3WI0AOAOAWpGWu+O6w0fO/w=="],
 
     "@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.2.6", "", { "dependencies": { "@tybys/wasm-util": "^0.10.3" }, "peerDependencies": { "@emnapi/core": "^1.7.1 || 2.0.0-beta.2", "@emnapi/runtime": "^1.7.1 || 2.0.0-beta.2" } }, "sha512-mRyDmEw9/fCDXCGfL1sbgIw/GUK0PVxRW4YwgPN61F3LQ+fSyoBFarJVzgGyhF6kRzEQZ0FejDqm4WLXSeqQmw=="],
 
